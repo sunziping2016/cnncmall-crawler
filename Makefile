@@ -7,6 +7,9 @@ deli.csv: deli-spider.py
 staples.csv: staples-spider.py
 	scrapy runspider $< -o $@
 
+jd-deli.csv: jd-deli-spider.py
+	scrapy runspider $< -o $@
+
 .PHONY: clean
 
 clean:
